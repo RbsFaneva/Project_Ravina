@@ -1,14 +1,118 @@
 body{
-	background-color: #33cc33;
-	font-family: Arial;
+	margin: 0;
+	padding: 0;
+/*	background-color: #33cc33;*/
+    background: green;
+	
 }
 
 h1{
-	text-align: center;
-	font-size: 100px;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 120px;
+	background-image: url("../photo/fond.jpg");
+	color: transparent;
+	-webkit-background-clip: text;
+    -webkit-text-stroke: 1px transparent;
+}
+button{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: fantasy;
+	font-size: 30px;
+	font-weight: bold;
+	color: blue;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	border-style:inset;
+	box-shadow: 5px 5px 2px white;
+	
+	background: cyan;
+	cursor: pointer;
+	transition: 0.2s;
+}
+button:hover{
+	border-style: outset;
+	box-shadow: 0px 0px 2px white;
+	border-color:steelblue;
+	 transition:0.2s;
+}
+img{
+	width: 100px;
+	height: 100px;
+	z-index: -1;
+	
+}
+ul{
+	list-style-type: none;
+	
+	
+}
+li{
+	position: absolute;
+	top:0px;
+	animation: effet 15s ease-in-out infinite;
+	opacity: 0;
+}li:nth-child(1){
+	position: absolute;
+	top:0px;
+	left: 15%;
+	transform: rotate(45deg);
+	animation: effet 15s ease-in-out infinite;
+	animation-delay: 4s;
+}
+li:nth-child(2){
+	position: absolute;
+	top:0px;
+	left: 30%;
+	animation: effet 15s ease-in-out infinite;
+	animation-delay: 6s;
+}
+	
+li:nth-child(3){
+	position: absolute;
+	top:0px;
+	left: 50%;
+	transform: rotate(60deg);
+	animation: effet 15s ease-in-out infinite;
+	animation-delay: 10s;
+
+}
+li:nth-child(4){
+	position: absolute;
+	top:0px;
+	left: 70%;
+	animation: effet 15s ease-in-out infinite;
+	animation-delay: 1s;
+	
+}li:nth-child(5){
+	position: absolute;
+	top:0px;
+	left: 90%;
+	animation: effet 15 ease-in-out infinite;
+	animation-delay: 8s;
+}
+@keyframes effet {
+	0%{
+		top: 0px;
+		transform: rotate(0deg);
+        opacity: 1;
+	}
+	100%{
+		top: 85%;
+		transform: rotate(100deg);
+	}
 }
 
-input , p{
-	font-size: 30px;
-	text-align: center;
-}
+
+
+
+
+
+
+
