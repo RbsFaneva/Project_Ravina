@@ -18,44 +18,29 @@ var p_13= _$("p_13");
 var p_14= _$("p_14");
 var p_15= _$("p_15");
 
-player1 = [];
-function choix(rav){
-    if(player1.length < 3){
-        player1.push(rav.src);
-        rav.onclick = "";
-        rav.style.opacity = 0;
-        console.log(player1);
-    }else{
-        alert("You can't choose leaves anymore");
-    }
-    return player1;
+var player1 = [];
+var n = 3;
+var choix = function(rav){
+        if( (player1.length < n) ){
+            player1.push(rav.src);
+            rav.onclick = "";
+            rav.style.opacity = 0;
+            console.log(player1);
+        }
+        return function ret(){return player1};
 };
+console.log(choix());
 
-player2 = [];
-function choix2(rav){
-    if(player2.length < 3){
-        player2.push(rav.src);
-        rav.onclick = "";
-        rav.style.opacity = 0;
-        console.log(player2);
-    }else{
-        alert("You can't choose leaves anymore");
-    }
-    return player2;
-};
-
-
-function Aff(){
-    console.log(window.player1);
-    // var div = document.createElement("div");
-    // div.id ="div_plr";
-    // for(i=0; i<plr.length; i++){
-    //   var image = document.createElement('img');
-    //   image.id= plr[i];console.log(image);
-    //    console.log(player1[0]);
-    //   div.appendChild(image);
-    //   body.appendChild(div);
-    // }
-    
-}
+// function Aff(){
+//     console.log(document.player1);
+//     var div = document.createElement("div");
+//     div.id ="div_plr";
+//     for(i=0; i<plr.length; i++){
+//       var image = document.createElement('img');
+//       image.id= plr[i];console.log(image);
+//        console.log(player1[0]);
+//       div.appendChild(image);
+//       body.appendChild(div);
+//     }
+// }
 
