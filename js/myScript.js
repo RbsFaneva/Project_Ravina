@@ -19,17 +19,27 @@ var p_14= _$("p_14");
 var p_15= _$("p_15");
 
 var player1 = [];
-var n = 3;
-var choix = function(rav){
-        if( (player1.length < n) ){
-            player1.push(rav.src);
+var player2 = [];
+
+var p1 = [];
+function players(mpilalao,safidiny){
+    this.player = mpilalao;
+    this.choix = safidiny;
+};
+var i = 0;
+    function choix(rav, player){
+        if(player.length < 3){
+            player.push(rav.src);
             rav.onclick = "";
             rav.style.opacity = 0;
-            console.log(player1);
-        }
-        return function ret(){return player1};
-};
-console.log(choix());
+            console.log(player);
+            p = [];
+        }if(player.length == 3){
+            p[i] = new players("player1",player1);
+            console.log(p[i]);
+        }             
+    }
+
 
 // function Aff(){
 //     console.log(document.player1);
