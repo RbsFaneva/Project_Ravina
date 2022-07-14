@@ -11,9 +11,24 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: red;
 }
-p{
+#annonce2{
+    position: absolute;
+    top: 100%;
+    left:42%;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:blue;
+}
+#para_1{
     position:absolute;
     top: 14%;
+    left: 30%;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#para_2{
+    position:absolute;
+    top: 114%;
     left: 30%;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,6 +38,12 @@ p{
      top: 30%;
      align-items: center;
 }
+#photo2 {
+    position: absolute;
+    top: 130%;
+    align-items: center;
+}
+
 img{
     height: 150px;
     width: 150px;
@@ -49,4 +70,23 @@ img:hover{
 	width: 200px;
     border-radius: 10px;
 	cursor: pointer;
+}
+#ready2{
+    position: absolute;
+    top: 185%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+   background: rgb(23, 92, 129);
+   -webkit-text-stroke: 2px rgb(75, 203, 94);
+   text-align: center;
+   border-style: outset;
+   height: 40px;
+   width: 200px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+body{
+    overflow: hidden;
 }

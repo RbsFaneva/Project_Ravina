@@ -22,24 +22,23 @@ var player1 = [];
 var player2 = [];
 
 var p1 = [];
+
 function players(mpilalao,safidiny){
     this.player = mpilalao;
     this.choix = safidiny;
 };
 var i = 0;
+var p = [];
     function choix(rav, player){
         if(player.length < 3){
             player.push(rav.src);
-            rav.onclick = "";
-            rav.style.opacity = 0;
+            rav.style.visibility = "hidden";
+            rav.style.onclick = "";
             console.log(player);
-            p = [];
         }if(player.length == 3){
             p[i] = new players("player1",player1);
-            console.log(p[i]);
         }             
     }
-
 
 // function Aff(){
 //     console.log(document.player1);
